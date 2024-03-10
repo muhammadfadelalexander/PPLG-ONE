@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --dl-color-gray-500: #595959;
   --dl-color-gray-700: #999999;
@@ -35,10 +38,6 @@
   --dl-space-space-threeunits: 48px;
   --dl-space-space-oneandhalfunits: 24px;
 }
-html {
-  scroll-behavior: smooth;
-}
-
 .button {
   gap: var(--dl-space-space-unit);
   color: var(--dl-color-gray-black);

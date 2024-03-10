@@ -44,6 +44,7 @@
 .testimonial-card1-image {
   width: var(--dl-size-size-large);
   height: var(--dl-size-size-large);
+  box-shadow: 5px 5px 10px 0px #d4d4d4,5px 5px 10px 0px #d4d4d4;
   object-fit: cover;
   border-radius: var(--dl-radius-radius-20px);
   animation-name: headShake;
@@ -86,6 +87,15 @@
 
 
 
+
+
+
+@media(max-width: 1440px) {
+  .testimonial-card1-text1 {
+    align-self: center;
+    text-align: center;
+  }
+}
 @media(max-width: 991px) {
   .testimonial-card1-text2 {
     align-self: center;
