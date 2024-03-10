@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PPLG-ONE</title>
+    <meta property="og:title" content="PPLG-ONE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Source Sans Pro;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({ reset: true });
+    </script>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <header data-thq="thq-navbar" class="home-navbar">
+          <a href="#home" class="home-link">
+            <img
+              alt="image"
+              src="public/pplg-oneadas-200h.png"
+              class="home-image"
+            />
+          </a>
+          <div
+            data-thq="thq-navbar-nav"
+            data-role="Nav"
+            class="home-desktop-menu"
+          >
+            <nav
+              data-thq="thq-navbar-nav-links"
+              data-role="Nav"
+              class="home-nav"
+            >
+              <a href="#home" class="home-link01 navLink">Home</a>
+              <a href="#about" class="home-link02 navLink">About</a>
+              <a href="#students" class="home-link03 navLink">Students</a>
+              <a href="#teachers" class="home-link04 navLink">Teachers</a>
+              <a href="#gallery" class="home-link05 navLink">Gallery</a>
+            </nav>
+          </div>
+          <div data-thq="thq-burger-menu" class="home-burger-menu">
+            <svg viewBox="0 0 1024 1024" class="home-icon">
+              <path
+                d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+              ></path>
+            </svg>
+          </div>
+          <div data-thq="thq-mobile-menu" class="home-mobile-menu">
+            <div
+              data-thq="thq-mobile-menu-nav"
+              data-role="Nav"
+              class="home-nav1"
+            >
+              <div class="home-container01">
+                <img
+                  alt="image"
+                  src="public/pplg-one-200h.png"
+                  class="home-image1"
+                />
+                <div data-thq="thq-close-menu" class="home-menu-close">
+                  <svg viewBox="0 0 1024 1024" class="home-icon2">
+                    <path
+                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <nav
+                data-thq="thq-mobile-menu-nav-links"
+                data-role="Nav"
+                class="home-nav2"
+              >
+                <a href="#home" class="home-link06 navLink">Home</a>
+                <a href="#about" class="home-link07 navLink">About</a>
+                <a href="#students" class="home-link08 navLink">
+                  <span>Students</span>
+                  <br />
+                </a>
+                <a href="#teachers" class="home-link09 navLink">Teachers</a>
+                <a href="#gallery" class="home-link10 navLink">
+                  <span class="home-text02">Gallery</span>
+                  <br />
+                  <br />
+                </a>
+              </nav>
+            </div>
+          </div>
+        </header>
+        <section class="home-hero">
+          <div id="home" class="home-background">
+            <img
+              alt="image"
+              src="public/circle-background.svg"
+              class="home-image2"
+            />
+          </div>
+          <div id="homee" class="home-hero-content">
+            <h1 class="home-text05">
+              <span>We hope you enjoy exploring our classroom website.</span>
+              <br />
+            </h1>
+            <div class="home-caption">
+              <animate-on-reveal
+                animation="jello"
+                duration="1000ms"
+                delay="0s"
+                direction="alternate"
+                easing="ease-in"
+                iteration="1"
+              >
+                <a
+                  href="#students"
+                  data-thq-animate-on-reveal="true"
+                  class="home-hello-button button-style-1 button"
+                >
+                  <span class="home-text08">
+                    <span class="home-text09">Hello</span>
+                    <br />
+                    <span>Viewer</span>
+                    <br />
+                  </span>
+                </a>
+              </animate-on-reveal>
+              <p class="home-caption1">Kuasai teknologi, atur masa depanmu!</p>
+            </div>
+          </div>
+        </section>
+        <section class="home-notes">
+          <div id="hero" class="home-first">
+            <div data-aos="fade-up-right" id="about" class="home-content">
+              <animate-on-reveal>
+                <h2 data-thq-animate-on-reveal="true" class="home-header">
+                  Teknologi bagaikan pedang bermata dua. Di satu sisi, ia
+                  menawarkan kekuatan dan kemudahan yang tak terbayangkan,
+                  membuka pintu menuju dunia baru yang penuh kemungkinan. Di
+                  sisi lain, ia juga dapat menjadi alat kontrol yang berbahaya,
+                  menjerumuskan kita ke dalam ilusi dan manipulasi.
+                </h2>
+              </animate-on-reveal>
+            </div>
+            <img
+              alt="image"
+              src="https://lh3.googleusercontent.com/pw/AP1GczMO0tLKMcmmXFWWxnFYA4YdhRnDpQviNUtGMQ7pA9EKOMFPwSJdx3xFZzfZKOTq4uYRAwPRX97y79JGT14-2wK6Hui67u2PE6A1RpvACKx7jcGgAs-VQfZc1ucZh6u5alE5dC2Rfi4U3UfHlzQBhzMS=w1691-h1268-s-no-gm?authuser=0"
+              class="home-image3 image-notes"
+            />
+          </div>
+          <div class="home-second">
+            <div data-aos="fade-up-left" class="home-content1">
+              <animate-on-reveal
+                animation="headShake"
+                duration="300ms"
+                delay="0s"
+                direction="normal"
+                easing="ease"
+                iteration="1"
+              >
+                <h2 data-thq-animate-on-reveal="true" class="home-header1">
+                  Di atas segalanya, teknologi adalah alat. Ia tunduk pada
+                  kehendak manusia, siap untuk diarahkan dan dikendalikan. Masa
+                  depan teknologi bukan ditentukan oleh mesin, melainkan oleh
+                  pilihan yang kita buat hari ini.
+                </h2>
+              </animate-on-reveal>
+            </div>
+            <img
+              alt="image"
+              src="https://lh3.googleusercontent.com/pw/AP1GczPZoVoVyAUwq6laj6VVF_lhost7R9wDs6GKAwnAHeHQ7WMzZwPc0qRblk7sUPUZurCYpEP8ydQYswNLrZYYTnKY31k9bPfr-ZwY5l8A-awQ5jYG1tNB5bv7U_vY9gF-AAlqi8BXicUHJ4TM4LK4lMDP=w1691-h1268-s-no-gm?authuser=0"
+              class="home-image4 image-notes"
+            />
+          </div>
+        </section>
+        <section class="home-speakers">
+          <animate-on-reveal
+            animation="headShake"
+            duration="300ms"
+            delay="0s"
+            direction="normal"
+            easing="ease"
+            iteration="1"
+          >
+            <div
+              id="students"
+              data-thq-animate-on-reveal="true"
+              class="home-container02"
+            >
+              <animate-on-reveal
+                animation="headShake"
+                duration="300ms"
+                delay="0s"
+                direction="normal"
+                easing="ease"
+                iteration="1"
+              >
+                <h1
+                  id="student"
+                  data-thq-animate-on-reveal="true"
+                  class="home-text13"
+                >
+                  <span>students.</span>
+                  <br />
+                </h1>
+              </animate-on-reveal>
+              <animate-on-reveal
+                animation="headShake"
+                duration="300ms"
+                delay="0s"
+                direction="normal"
+                easing="ease"
+                iteration="1"
+              >
+                <span data-thq-animate-on-reveal="true" class="home-text16">
+                  Warga Pengembangan Perangkat Lunak dan GIM - The One And Only.
+                </span>
+              </animate-on-reveal>
+              <div class="home-container03">
+                <div
+                  class="testimonial-card1-testimonial-card testimonial-card1-root-class-name2"
+                >
+                  <svg
+                    viewBox="0 0 950.8571428571428 1024"
+                    class="testimonial-card1-icon"
+                  >
+                    <path
+                      d="M438.857 182.857v402.286c0 161.143-131.429 292.571-292.571 292.571h-36.571c-20 0-36.571-16.571-36.571-36.571v-73.143c0-20 16.571-36.571 36.571-36.571h36.571c80.571 0 146.286-65.714 146.286-146.286v-18.286c0-30.286-24.571-54.857-54.857-54.857h-128c-60.571 0-109.714-49.143-109.714-109.714v-219.429c0-60.571 49.143-109.714 109.714-109.714h219.429c60.571 0 109.714 49.143 109.714 109.714zM950.857 182.857v402.286c0 161.143-131.429 292.571-292.571 292.571h-36.571c-20 0-36.571-16.571-36.571-36.571v-73.143c0-20 16.571-36.571 36.571-36.571h36.571c80.571 0 146.286-65.714 146.286-146.286v-18.286c0-30.286-24.571-54.857-54.857-54.857h-128c-60.571 0-109.714-49.143-109.714-109.714v-219.429c0-60.571 49.143-109.714 109.714-109.714h219.429c60.571 0 109.714 49.143 109.714 109.714z"
+                    ></path>
+                  </svg>
+                  <div class="testimonial-card1-testimonial">
+                    <span class="testimonial-card1-text">
+                      <span>
+                        "Ngoding mah bikin pusing, mending ngewibu. Kalo gak
+                        stress ya cabul."
+                      </span>
+                    </span>
+                    <span class="testimonial-card1-text1">
+                      <span>Cahya Maulana Jan</span>
+                    </span>
+                    <span class="testimonial-card1-text2">
+                      <span>KETUA KELAS</span>
+                    </span>
+                    <img
+                      alt="cahya"
+                      src="https://lh3.googleusercontent.com/pw/AP1GczPfE8MGatQe5_F4bwr9Om4oyXahvbS4MO0R6DRfftT9QuEmtXByeWpH0efMtr4Pl3PszVs8J51gbNFIZTSg-1WNprUXmzwKo-R9cp1wSbuuX9mXNE9cYMx12X7I0_5L-flkl-7V6cR5nIwDE34HO1LP=w951-h1268-s-no-gm?authuser=1"
+                      loading="eager"
+                      class="testimonial-card1-image"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="testimonial-card1-testimonial-card testimonial-card1-root-class-name"
+                >
+                  <svg
+                    viewBox="0 0 950.8571428571428 1024"
+                    class="testimonial-card1-icon"
+                  >
+                    <path
+                      d="M438.857 182.857v402.286c0 161.143-131.429 292.571-292.571 292.571h-36.571c-20 0-36.571-16.571-36.571-36.571v-73.143c0-20 16.571-36.571 36.571-36.571h36.571c80.571 0 146.286-65.714 146.286-146.286v-18.286c0-30.286-24.571-54.857-54.857-54.857h-128c-60.571 0-109.714-49.143-109.714-109.714v-219.429c0-60.571 49.143-109.714 109.714-109.714h219.429c60.571 0 109.714 49.143 109.714 109.714zM950.857 182.857v402.286c0 161.143-131.429 292.571-292.571 292.571h-36.571c-20 0-36.571-16.571-36.571-36.571v-73.143c0-20 16.571-36.571 36.571-36.571h36.571c80.571 0 146.286-65.714 146.286-146.286v-18.286c0-30.286-24.571-54.857-54.857-54.857h-128c-60.571 0-109.714-49.143-109.714-109.714v-219.429c0-60.571 49.143-109.714 109.714-109.714h219.429c60.571 0 109.714 49.143 109.714 109.714z"
+                    ></path>
+                  </svg>
+                  <div class="testimonial-card1-testimonial">
+                    <span class="testimonial-card1-text">
+                      <span>"Manipulation is the art of Persuation."</span>
+                    </span>
+                    <span class="testimonial-card1-text1">
+                      <span>Muhammad Fadel Alexander</span>
+                    </span>
+                    <span class="testimonial-card1-text2">
+                      <span>SIE. KEAMANAN</span>
+                    </span>
+                    <img
+                      alt="fadel"
+                      src="https://lh3.googleusercontent.com/pw/AP1GczNUTbjnOF1vMsQ5SPlCPDl_PFUjQ6MkpfXJ7un8EvRGtvQRkUJ9j68rq_HEpV2HntETzfSJEGrcggzkz50DCoqCTYjOJTa5sylG6XwN9V0GX7VvobyMQQ0Z5Hb1suy9NVfvyEkp8BA0dXyvy_UAMUJD=w1282-h1268-s-no-gm?authuser=1"
+                      loading="eager"
+                      class="testimonial-card1-image"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="testimonial-card1-testimonial-card testimonial-card1-root-class-name1"
+                >
+                  <svg
+                    viewBox="0 0 950.8571428571428 1024"
+                    class="testimonial-card1-icon"
+                  >
+                    <path
+                      d="M438.857 182.857v402.286c0 161.143-131.429 292.571-292.571 292.571h-36.571c-20 0-36.571-16.571-36.571-36.571v-73.143c0-20 16.571-36.571 36.571-36.571h36.571c80.571 0 146.286-65.714 146.286-146.286v-18.286c0-30.286-24.571-54.857-54.857-54.857h-128c-60.571 0-109.714-49.143-109.714-109.714v-219.429c0-60.571 49.143-109.714 109.714-109.714h219.429c60.571 0 109.714 49.143 109.714 109.714zM950.857 182.857v402.286c0 161.143-131.429 292.571-292.571 292.571h-36.571c-20 0-36.571-16.571-36.571-36.571v-73.143c0-20 16.571-36.571 36.571-36.571h36.571c80.571 0 146.286-65.714 146.286-146.286v-18.286c0-30.286-24.571-54.857-54.857-54.857h-128c-60.571 0-109.714-49.143-109.714-109.714v-219.429c0-60.571 49.143-109.714 109.714-109.714h219.429c60.571 0 109.714 49.143 109.714 109.714z"
+                    ></path>
+                  </svg>
+                  <div class="testimonial-card1-testimonial">
+                    <span class="testimonial-card1-text">
+                      <span>
+                        "Pergilah sejauh mungkin, dan kembalilah dengan keadaan
+                        hidup."
+                      </span>
+                    </span>
+                    <span class="testimonial-card1-text1">
+                      <span>Dhony Fujianto</span>
+                    </span>
+                    <span class="testimonial-card1-text2">
+                      <span>SIE. KEBERSIHAN</span>
+                    </span>
+                    <img
+                      alt="profile"
+                      src="https://lh3.googleusercontent.com/pw/AP1GczPAfuPQ2-DK495Q7HtPt_69frvrZvDpGMUi_Gk17LAdpi2Yi1thF_QiaM6KPgMOqD9CatsVqKlspvmCvskrqQqzSRHLeds3OKG6zAdd8buyena6V3O-__7QLnNvvwS8_T60UGWG7Iizw0dABN1fpiQt=w1691-h1268-s-no-gm?authuser=3"
+                      loading="eager"
+                      class="testimonial-card1-image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </animate-on-reveal>
+          <h1 id="teachers." class="home-text17">
+            <span>teachers.</span>
+            <br />
+          </h1>
+          <span class="home-text20">
+            Daftar Wali Kelas kami dari kelas X, XI, dan XII
+          </span>
+          <div id="teachers" class="home-blog">
+            <div class="home-container04">
+              <div
+                class="blog-post-card2-blog-post-card blog-post-card2-root-class-name3"
+              >
+                <img
+                  alt="yulianti"
+                  src="https://lh3.googleusercontent.com/pw/AP1GczMy54lKnIILYZlNaLjUIn0F_2NrJl-iDxZdccVUxGoaYdpp3ZJO8PjP_jWGexnUbmElFAfJWXUzfyk6-Ytpe6IsAGUscbkqmttJ8YswTxcjYQC8TqVy5_ahmz3V15hdgeURgDTO-JqLv_aNQk80tMYM=w570-h1268-s-no-gm?authuser=0"
+                  image_src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;h=1000"
+                  class="blog-post-card2-image"
+                />
+                <div class="blog-post-card2-container">
+                  <div class="blog-post-card2-container1"></div>
+                  <h1 class="blog-post-card2-text">
+                    <span>Yulianti, S. Sn (Kelas X)</span>
+                  </h1>
+                  <span class="blog-post-card2-text1">
+                    <span>
+                      Bu Yuli adalah wali kelas yang kreatif dan inovatif.
+                      Beliau sering menggunakan metode pembelajaran yang menarik
+                      dan menantang untuk meningkatkan minat belajar
+                      siswa-siswinya. Bu Yuli juga selalu terbuka terhadap
+                      ide-ide baru dan selalu berusaha memberikan yang terbaik
+                      bagi siswa-siswinya.
+                    </span>
+                  </span>
+                  <div class="blog-post-card2-container2"></div>
+                </div>
+              </div>
+            </div>
+            <div class="home-container05">
+              <div
+                class="blog-post-card2-blog-post-card blog-post-card2-root-class-name"
+              >
+                <img
+                  alt="image"
+                  src="https://lh3.googleusercontent.com/pw/AP1GczPSdbrIrola0E-h87sCCEvQdK5XOdJgKU51wVX2z58PVbsFW0WPsf7RhC1kWPO3efZ2SCMDLj29k6ivvG6CCYeGUz_nhHgQDBoI5S-kwh3TgvRkOnZEcJ_zhpm1c2IRuJXItiDl78LB9Eq0myfBggmW=w951-h1268-s-no-gm?authuser=0"
+                  image_src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;h=1000"
+                  class="blog-post-card2-image"
+                />
+                <div class="blog-post-card2-container">
+                  <div class="blog-post-card2-container1"></div>
+                  <h1 class="blog-post-card2-text">
+                    <span>Belum Kelas XI</span>
+                  </h1>
+                  <span class="blog-post-card2-text1">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Sed non volutpat turpis. Mauris luctus rutrum mi ut
+                      rhoncus. Integer in dignissim tortor. Lorem ipsum dolor
+                      sit amet, consectetur adipiscing ...
+                    </span>
+                  </span>
+                  <div class="blog-post-card2-container2"></div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="blog-post-card2-blog-post-card blog-post-card2-root-class-name2"
+            >
+              <img
+                alt="image"
+                src="https://lh3.googleusercontent.com/pw/AP1GczPSdbrIrola0E-h87sCCEvQdK5XOdJgKU51wVX2z58PVbsFW0WPsf7RhC1kWPO3efZ2SCMDLj29k6ivvG6CCYeGUz_nhHgQDBoI5S-kwh3TgvRkOnZEcJ_zhpm1c2IRuJXItiDl78LB9Eq0myfBggmW=w951-h1268-s-no-gm?authuser=0"
+                image_src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;h=1000"
+                class="blog-post-card2-image"
+              />
+              <div class="blog-post-card2-container">
+                <div class="blog-post-card2-container1"></div>
+                <h1 class="blog-post-card2-text">
+                  <span>Belum Kelas XII</span>
+                </h1>
+                <span class="blog-post-card2-text1">
+                  <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    non volutpat turpis. Mauris luctus rutrum mi ut rhoncus.
+                    Integer in dignissim tortor. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing ...
+                  </span>
+                </span>
+                <div class="blog-post-card2-container2"></div>
+              </div>
+            </div>
+          </div>
+          <a
+            href="https://photos.app.goo.gl/qX88CUgibjmB3E3b6"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="home-link11"
+          >
+            <h1 id="gallery." class="home-text21">
+              <span>gallery.</span>
+              <br />
+            </h1>
+          </a>
+          <span class="home-text24">
+            Kenangan yang selalu ada di album photos
+          </span>
+          <div id="gallery" class="home-gallery">
+            <div
+              class="gallery-card1-gallery-card gallery-card1-root-class-name"
+            >
+              <img
+                alt="image"
+                src="https://lh3.googleusercontent.com/pw/AP1GczOffb6cdg4wEhS3FmekNNxsAbbfeP6-gXGRtBWFxp7Z7RuyQptExAuoQeeuEEZmlje3DgYU03-aajo5rYuBedK06vcoZGJvqhHH03bU2UAUwNrCLMTSL3HT1BitgCR9xgLELXeEzWSxMKIs0TDOneKk=w1600-h719-s-no-gm?authuser=0"
+                class="gallery-card1-image"
+              />
+              <h2 class="gallery-card1-text"><span>PORAK 2023</span></h2>
+            </div>
+            <div
+              class="gallery-card1-gallery-card gallery-card1-root-class-name1"
+            >
+              <img
+                alt="image"
+                src="https://lh3.googleusercontent.com/pw/AP1GczPxXCJ0EYROapNp3yhc6jrmOtRtv9p7zK7Vve7IHDVXY1XmvDElswSAvrmKEpxdYnoP4e30TAZSJRVhoXAMlOPjPaKTsMB0owV8WD1QhbIeAvZPYD8Vs-kfRrz54PsXNLFexjLxxUscAAZsBloihPaN=w1691-h1268-s-no-gm?authuser=0"
+                class="gallery-card1-image"
+              />
+              <h2 class="gallery-card1-text"><span>KELUAR 2</span></h2>
+            </div>
+            <div
+              class="gallery-card1-gallery-card gallery-card1-root-class-name2"
+            >
+              <img
+                alt="image"
+                src="https://lh3.googleusercontent.com/pw/AP1GczO-L0EM6OHLGwtEX-OlxyDs7mDPwIO5t6vgdQEjBI1D6sIBNTBRPPUWLgcgYlVSa7rQASHyFACUferGR_FR7I-CjkVxcgn1NtI9keEi1swp6WIH8b_aAL0C5ffzTlzqVpBmzsckqjTlyqZvTFq95hiI=w2560-h1152-s-no-gm?authuser=0"
+                class="gallery-card1-image"
+              />
+              <h2 class="gallery-card1-text"><span>RAPORT "X"</span></h2>
+            </div>
+            <div
+              class="gallery-card1-gallery-card gallery-card1-root-class-name3"
+            >
+              <img
+                alt="image"
+                src="https://lh3.googleusercontent.com/pw/AP1GczPrlbWo7zJqRI1GbH5yp3SiWIMap7xpcGDDReOoh1cB4o1xP_UBMu-5m7hwIkDPdXe3RV6JSSwkybP7ZnIXJFHtX_3y7uVS3G2T3LiZwLuxTFBzKqTJB7JVC7GVvIaKv9W-20yyASDQ73VmwUyKekTd=w951-h1268-s-no-gm?authuser=0"
+                class="gallery-card1-image"
+              />
+              <h2 class="gallery-card1-text"><span>ANJAS</span></h2>
+            </div>
+            <div
+              class="gallery-card1-gallery-card gallery-card1-root-class-name4"
+            >
+              <img
+                alt="image"
+                src="https://lh3.googleusercontent.com/pw/AP1GczPmaA3UU3BQAJ9cONEHaCdaySI_NGLq5Hcc18QxbMyD1-xmKg8qLEP7AXdrvZVz1kOy_9vZ7_CgJIbABb4Cwzl_jOd3Se4xtX2lnifNrVexLV733W38AOz3Am5CLtLeMNWInDTgrNbZecjAMh-9X52a=w1691-h1268-s-no-gm?authuser=0"
+                class="gallery-card1-image"
+              />
+              <h2 class="gallery-card1-text"><span>CALEUY</span></h2>
+            </div>
+            <div
+              class="gallery-card1-gallery-card gallery-card1-root-class-name5"
+            >
+              <img
+                alt="image"
+                src="https://lh3.googleusercontent.com/pw/AP1GczO4a5ZTMf7krxuIx3TdOf5l1WKz9QjfZPEVc4PJS00gIOIsHD2MMA6Oxn7GsGBMnkUZS-iQj9S_KbM7m8Ay22oEIMSFErqWP9rBvyqP3QezuzlGTjED9L_UARqE6_T2OgZbbUe7YEP-Qu6f__MAoxjL=w951-h1268-s-no-gm?authuser=0"
+                class="gallery-card1-image"
+              />
+              <h2 class="gallery-card1-text"><span>CALEUY 2</span></h2>
+            </div>
+          </div>
+        </section>
+        <footer class="home-footer">
+          <div class="home-content2">
+            <div class="home-details">
+              <h2 class="home-title">P P L G - O N E</h2>
+            </div>
+            <span class="home-copyright">
+              Privacy — Terms &amp; Conditions — Code of Conduct © 2023 Muhammad
+              Fadel Alexander All Rights Reserved
+            </span>
+          </div>
+        </footer>
+        <div>
+          <div class="home-container07">
+            <script>
+              ScrollReveal().reveal('.speaker');
+              ScrollReveal().reveal('.image-notes');
+            </script>
+          </div>
+        </div>
+        <div>
+          <div class="home-container09">
+            <style>
+              #scrollbar::-webkit-scrollbar-track
+              {
+              	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+              	border-radius: 10px;
+              	background-color: #F5F5F5;
+              }
+
+              #scrollbar::-webkit-scrollbar
+              {
+              	height: 12px;
+              	background-color: #F5F5F5;
+              	border-radius: 10px;
+              }
+
+              #scrollbar::-webkit-scrollbar-thumb
+              {
+              	border-radius: 10px;
+              	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+              	background-color: #555;
+              }
+            </style>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/react-components/dist/animate-on-reveal.umd.js"
+    ></script>
+  </body>
+</html>
