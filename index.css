@@ -505,6 +505,12 @@ html {
   font-style: italic;
   font-family: "Victor Mono";
   font-weight: 700;
+  animation-name: bounce;
+  animation-delay: 0s;
+  animation-duration: 904ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
 }
 .home-notes {
   width: 100%;
