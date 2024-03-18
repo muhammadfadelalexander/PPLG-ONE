@@ -953,9 +953,6 @@ html {
   .home-image3 {
     flex: 0 0 auto;
     width: 100%;
-    border-radius: var(--dl-radius-radius-20px);
-    border-top-left-radius: var(--dl-radius-radius-20px);
-    border-bottom-left-radius: var(--dl-radius-radius-20px);
   }
   .home-second {
     flex-direction: column;
